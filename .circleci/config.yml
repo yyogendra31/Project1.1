@@ -37,9 +37,8 @@ jobs:
             cat deployment/react-deployment.yaml
             git add .
             git commit -m "new build with imgTag build-$TAG"
+            git config --global credential.helper cache
             git push -q https://github.com/yyogendra31/Project1.1kubernetes.git main
-            git config --global user.email "yadavyogendra31@gmail.com"
-            git config --global user.name "yyogendra31"
 workflows:
   Yogireactflow:
     jobs:
