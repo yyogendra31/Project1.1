@@ -43,6 +43,6 @@ workflows:
   Yogireactflow:
     jobs:
       - build_and_push
-#      - Update_manifest:
-#          requires:
-#            - build_and_push
+      - Update_manifest:
+          requires:
+            - build_and_push
