@@ -27,6 +27,7 @@ jobs:
           command: |
             TAG=$CIRCLE_BUILD_NUM
             git clone https://github.com/yyogendra31/Project1.1kubernetes.git
+            git config --global user.email "yadavyogendra31@gmail.com"
             git config --global user.name "yyogendra31"
             pwd
             cd Project1.1kubernetes
