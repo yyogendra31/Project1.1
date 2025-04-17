@@ -38,7 +38,7 @@ jobs:
             git add .
             git commit -m "new build with imgTag build-$TAG"
             git config --global credential.helper cache
-            git push -q https://github.com/yyogendra31/Project1.1kubernetes.git main
+            git push -q https://$GITHUB_PERSONAL_TOKEN@github.com/yyogendra31/Project1.1kubernetes.git main
 workflows:
   Yogireactflow:
     jobs:
